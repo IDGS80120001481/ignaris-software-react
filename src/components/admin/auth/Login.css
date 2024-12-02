@@ -1,0 +1,91 @@
+.body_component {
+  font-family: Helvetica Neue, sans sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(./Login.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: #eeeeee;
+}
+
+label {
+  font-size: 17px;
+  color: #575757;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px 11px;
+  border: 1px solid #229954;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  background-color: #fafafc;
+  outline: none;
+  color: #145a32;
+  font-size: 16px;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.circular-img {
+  width: 120px;
+  height: 120px;
+  background-color: #ffe2f0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 150px;
+  color: #fff;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+.circular-img img {
+  max-width: 120%;
+  max-height: 120%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circular-container {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  body {
+    padding: 30px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .remember {
+    flex-direction: column;
+  }
+}
